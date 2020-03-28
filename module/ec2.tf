@@ -11,6 +11,4 @@ resource "aws_instance" "web2" {
   key_name      = "${aws_key_pair.deployer.key_name}"
 }
 
-output "IP" {
-  value       =   "${aws_instance.web.public_ip}"
-}
+
