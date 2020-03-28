@@ -2,24 +2,24 @@ output "VPC_ID" {
     value = "${aws_vpc.dev.id}"
 }
 output "Subnet1" {
-  value = "${module.dev.Subnet1}"
+  value = "${aws_subnet.dev1.id}"
 }
 output "Subnet2" {
-  value = "${module.dev.Subnet2}"
+  value = "${aws_subnet.dev2.id}"
 }
 output "Subnet3" {
-  value = "${module.dev.Subnet3}"
+  value = "${aws_subnet.dev3.id}"
 }
 output "Private_Subnet1" {
-  value = "${module.dev.Private_Subnet1}"
+  value = "${aws_subnet.dev_private1.id}"
 }
 output "Private_Subnet2" {
-  value = "${module.dev.Private_Subnet2}"
+  value = "${aws_subnet.dev_private1.id}"
 }
 output "Private_Subnet3" {
-  value = "${module.dev.Private_Subnet3}"
+  value = "${aws_subnet.dev_private1.id}"
 }
 
 output "IGW" {
-  value = "${module.dev.IGW}"
+  value = "${aws_internet_gateway.dev.id}"
 }
